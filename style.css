@@ -1,0 +1,25 @@
+/* style.css — LUMEN visual system: dark, glowing, high-contrast, mobile-first.
+   The dark field makes the light the whole point of the game: nothing competes
+   with the beam. */
+*{box-sizing:border-box}
+html,body{margin:0;background:#07070b;color:#e8eef7;font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+body{padding:16px;max-width:560px;margin:auto;-webkit-tap-highlight-color:transparent}
+
+header{text-align:center}
+h1{font-weight:800;letter-spacing:0.18em;font-size:1.6rem;color:#e8eef7;text-shadow:0 0 18px rgba(127,215,255,0.35)}
+.tagline{font-size:0.82rem;letter-spacing:0.08em;color:#9fb0c6;margin-top:6px}
+
+.board{display:flex;justify-content:center;align-items:center}
+canvas{display:block;max-width:94vw;height:auto;background:#0a0a0f;border:1px solid rgba(127,215,255,0.18);border-radius:14px;box-shadow:0 0 30px rgba(127,215,255,0.08)}
+
+.status{font-family:monospace,ui-monospace;font-size:0.8rem;color:#9fb0c6;text-align:center;min-height:1.4rem}
+#share{color:#7fd7ff}
+
+.howto{margin-top:22px}
+.howto h2{font-size:1rem;color:#cdd6e6}
+.howto ul{list-style:none}
+.howto li{font-size:0.86rem;color:#b7c2d4;line-height:1.6;list-style:none}
+.howto li:before{content:"· ";color:#7fd7ff}
+.hint{font-size:0.8rem;color:#7fd7ff;font-style:italic}
+
+@media (max-width:480px){ h1{font-size:1.2rem} }

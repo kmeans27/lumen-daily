@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>LUMEN — the daily light puzzle</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>LUMEN</h1>
+  <p class="tagline">bend the light · light every target · one puzzle a day</p>
+</header>
+
+<div class="board">
+  <canvas id="lumen"></canvas>
+</div>
+
+<div class="status">
+  <div id="hud">loading…</div>
+  <div id="share" hidden></div>
+</div>
+
+<section class="howto">
+  <h2>How to play</h2>
+  <ul>
+    <li>A beam of light enters the grid from one edge.</li>
+    <li>Tap an empty cell to place a mirror; tap again to rotate it.</li>
+    <li>You get <strong>exactly</strong> the mirrors you need — no spares. Fewer moves = a cleaner solve.</li>
+    <li>Light up <strong>every</strong> target. A colored target must be hit by a beam of that color.</li>
+    <li>Prisms split the beam; filters recolor it. They’re fixed fixtures — don’t place them.</li>
+  </ul>
+  <p class="hint">The light is the feedback: every tap re-runs the beam and shows you how close you are.</p>
+</section>
+
+<script src="src/engine.js"></script>
+<script src="src/generator.js"></script>
+<script src="src/game.js"></script>
+</body>
+</html>
